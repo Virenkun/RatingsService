@@ -1,0 +1,20 @@
+
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://viren:virensoni@virenmongodb.3ldg7nz.mongodb.net/?retryWrites=true&w=majority&appName=VirenMongoDb
+      database: microservices
+      auto-index-creation: true
+
+  application:
+      name: RATING-SERVICE
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
